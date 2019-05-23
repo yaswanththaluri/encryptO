@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">encryptO</string>
+
+    <string name="text1">The main aim of this application is to encrypt or decrypt your messages that are shares with your friends, families and loved one\'s etc.\n\nThis helps to hide the sensitive information spyed by your friends, family and anonymous people.\n\nSuppose you want to send an important code to your boss in whats app. If you are sending it throught the messaging apps, your friends, parents may see it.\nEven the data is stored by that app company. So you can send a message by encrypting the text with pin and the pin is to be shared with person to whom you send the message so that the person can decrypt it.\n\n
+    </string>
+
+    <string name="encryption">
+    1. Go to encrypt Module.\n
+    2. Type the message to encrypt.\n
+    3. Submit message and Set a pin to the message.\n
+    4. Now you get an encrypted text.\n
+    5. You can copy it by just clicking on copy icon.\n
+    6. If you want to save the encrypted messages, You can click on save button afted encrypting (Only if you wish to do).\n
+    7. To encrypt new message, click cancel icon.\n
+    </string>
+
+    <string name="decrypt">
+        1. Go to decrypt module.\n
+        2. Paste the encrypted message received from a person.\n
+        3. Know the pin from the person to decrypted the message.\n
+        4. Enter Pin.\n
+        5. Copy the resulted decrypted message.\n
+        6. If you want to save the decrypted messages, You can click on save button afted decrypting (Only if you wish to do).\n
+        7. To decrypt new message, click cancel icon.\n
+    </string>
+
+    <string name="history">
+        1. All the encryped and decrypted messages that you have saved will be visible here.\n
+        2. It is visible only when you explicitly save a message. By default, the app does not save your encrypted or decrypted messages.\n
+    </string>
+
+
+    <string name="note1">
+        No one can decrypt the message because its encryption is based on the pin.
+    </string>
+
+    <string name="note2">
+        1. We don\'t have any access to the app or data after user installs the application in his mobile.\n
+        2. If you want to save the encrypted or decrypted message, You can click on the Save button (Only if you wish to do).\n
+    </string>
+
+
+</resources>

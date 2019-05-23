@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Decrypt"
+    android:background="#00D6C6">
+
+
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/goback"
+        android:layout_margin="20dp"
+        android:id="@+id/goHome"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deCrypt"
+        android:textSize="32sp"
+        android:id="@+id/head"
+        android:transitionName="trans2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"/>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffffff"
+        android:layout_below="@id/head"
+        android:layout_marginTop="10dp"
+        android:id="@+id/line"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <!--<EditText-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:background="@drawable/edittext_layout"-->
+    <!--android:layout_margin="20dp"-->
+    <!--android:layout_centerInParent="true"-->
+    <!--android:inputType="textMultiLine"-->
+    <!--/>-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Message to Decrypt:"
+        android:textColor="#ffffff"
+        android:layout_above="@id/pinLayout"
+        android:textSize="18sp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/hintDecrypt"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/messageToEncrypt"
+        android:layout_margin="20dp">
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:background="@drawable/edittext_layout"
+            android:padding="10dp"
+            android:textColorHint="#000000"
+            android:textColor="#000000"
+            android:imeOptions="actionDone"
+            android:inputType="textMultiLine" />
+    </android.support.design.widget.TextInputLayout>
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/messageToEncrypt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/copy"
+        android:layout_toStartOf="@id/decryptEnter"
+        android:visibility="invisible"
+        android:id="@+id/copy" />
+
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="10dp"
+        android:layout_below="@id/messageToEncrypt"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/enterdecrypt"
+        android:id="@+id/decryptEnter"
+        />
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/messageToEncrypt"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/cleargreen"
+        android:visibility="invisible"
+        android:layout_toEndOf="@id/decryptEnter"
+        android:id="@+id/clear" />
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:padding="50dp"
+        android:background="@drawable/pin_layout"
+        android:orientation="vertical"
+        android:id="@+id/pinLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter PIN to Encrypt"
+            android:id="@+id/pinHint"
+            android:layout_gravity="center"
+            android:textColor="#00D6C6"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:id="@+id/pin1"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:id="@+id/pin2"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:inputType="numberPassword"
+                android:hint="*"
+                android:id="@+id/pin3"
+                android:gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/setlock"
+            android:layout_gravity="center"
+            android:id="@+id/decryptMessage"/>
+
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        android:id="@+id/saveDecryptMessage"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
